@@ -6,12 +6,12 @@
  * @package Phile
  */
 
-require_once 'vendor/autoload.php';
+require_once '../vendor/autoload.php';
 
 ob_start();
 
 try {
-    \Phile\Bootstrap::getInstance()->initializeBasics(\Phile\Core\Utility::load('config.php'));
+    \Phile\Bootstrap::getInstance()->initializeBasics(\Phile\Core\Utility::load('../config.php'));
     $router = new \Phile\Core\Router();
     $response = new \Phile\Core\Response();
     $phileCore = new \Phile\Core($router, $response);
