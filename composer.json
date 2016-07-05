@@ -32,9 +32,6 @@
       "role": "Developer"
     }
   ],
-  "config": {
-    "vendor-dir": "lib/vendor"
-  },
   "require": {
     "php": ">=5.4.0",
     "twig/twig": "^1.15.0",
