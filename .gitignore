@@ -2,6 +2,9 @@
 composer.phar
 vendor/*
 
+# Site configuration
+config.php
+
 # OS Generated
 .DS_Store*
 ehthumbs.db
