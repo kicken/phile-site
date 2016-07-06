@@ -48,7 +48,7 @@
     "phile-cms/phile-core": "dev-core-split"
   },
   "scripts": {
-    "phile-setup": "php bin/setup.php",
+    "phile-setup": "php bin/console setup",
     "post-create-project-cmd": "@phile-setup",
     "post-install-cmd": "@phile-setup"
   }
