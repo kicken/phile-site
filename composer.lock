@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cd97755d72a7fe99215883d620b01c89",
-    "content-hash": "cd51c8150f3431662e2faf33f951edc9",
+    "hash": "a7f92081a29f4fcbb11a2335ca2d8624",
+    "content-hash": "5efc96916991cbd2624536f9f2aed506",
     "packages": [
         {
             "name": "michelf/php-markdown",
@@ -64,7 +64,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Phile-core",
-                "reference": "04393c9f1fbdbd0f47e3e145c36cb075269ad916",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -227,66 +227,6 @@
                 "wincache"
             ],
             "time": "2016-02-03 22:06:21"
-        },
-        {
-            "name": "symfony/console",
-            "version": "v3.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/console.git",
-                "reference": "747154aa69b0f83cd02fc9aa554836dee417631a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/747154aa69b0f83cd02fc9aa554836dee417631a",
-                "reference": "747154aa69b0f83cd02fc9aa554836dee417631a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.9",
-                "symfony/polyfill-mbstring": "~1.0"
-            },
-            "require-dev": {
-                "psr/log": "~1.0",
-                "symfony/event-dispatcher": "~2.8|~3.0",
-                "symfony/process": "~2.8|~3.0"
-            },
-            "suggest": {
-                "psr/log": "For using the console logger",
-                "symfony/event-dispatcher": "",
-                "symfony/process": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.1-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Console\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Console Component",
-            "homepage": "https://symfony.com",
-            "time": "2016-06-29 07:02:31"
         },
         {
             "name": "symfony/polyfill-mbstring",
