@@ -64,13 +64,14 @@
             "dist": {
                 "type": "path",
                 "url": "../Phile-core",
-                "reference": null,
+                "reference": "b201c9672c37ce2e8582e14f4eabced262e7b50f",
                 "shasum": null
             },
             "require": {
                 "michelf/php-markdown": ">=1.4",
                 "php": ">=5.4.0",
                 "phpfastcache/phpfastcache": "~3.0",
+                "symfony/event-dispatcher": "^2.1",
                 "symfony/yaml": "^2.7",
                 "twig/twig": "^1.15.0"
             },
@@ -229,37 +230,45 @@
             "time": "2016-02-03 22:06:21"
         },
         {
-            "name": "symfony/polyfill-mbstring",
-            "version": "v1.2.0",
+            "name": "symfony/event-dispatcher",
+            "version": "v2.8.8",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "dff51f72b0706335131b00a7f49606168c582594"
+                "url": "https://github.com/symfony/event-dispatcher.git",
+                "reference": "b180b70439dca70049b6b9b7e21d75e6e5d7aca9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/dff51f72b0706335131b00a7f49606168c582594",
-                "reference": "dff51f72b0706335131b00a7f49606168c582594",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/b180b70439dca70049b6b9b7e21d75e6e5d7aca9",
+                "reference": "b180b70439dca70049b6b9b7e21d75e6e5d7aca9",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/config": "~2.0,>=2.0.5|~3.0.0",
+                "symfony/dependency-injection": "~2.6|~3.0.0",
+                "symfony/expression-language": "~2.6|~3.0.0",
+                "symfony/stopwatch": "~2.3|~3.0.0"
             },
             "suggest": {
-                "ext-mbstring": "For best performance"
+                "symfony/dependency-injection": "",
+                "symfony/http-kernel": ""
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2-dev"
+                    "dev-master": "2.8-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Symfony\\Polyfill\\Mbstring\\": ""
+                    "Symfony\\Component\\EventDispatcher\\": ""
                 },
-                "files": [
-                    "bootstrap.php"
+                "exclude-from-classmap": [
+                    "/Tests/"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -268,24 +277,17 @@
             ],
             "authors": [
                 {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 },
                 {
                     "name": "Symfony Community",
                     "homepage": "https://symfony.com/contributors"
                 }
             ],
-            "description": "Symfony polyfill for the Mbstring extension",
+            "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "keywords": [
-                "compatibility",
-                "mbstring",
-                "polyfill",
-                "portable",
-                "shim"
-            ],
-            "time": "2016-05-18 14:26:46"
+            "time": "2016-06-29 05:29:29"
         },
         {
             "name": "symfony/yaml",

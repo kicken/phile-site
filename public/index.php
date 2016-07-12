@@ -8,17 +8,12 @@
 
 require_once '../vendor/autoload.php';
 
-ob_start();
-
 try {
-    \Phile\Bootstrap::getInstance()->initializeBasics(\Phile\Core\Utility::load('../config.php'));
-    $router = new \Phile\Core\Router();
-    $response = new \Phile\Core\Response();
-    $phileCore = new \Phile\Core($router, $response);
-    $phileCore->render();
+    $config = include '../config.php';
+    $core = \Phile\Core::bootstrap($config);
+    $core->handleRequest();
 } catch (\Exception $e) {
     if (\Phile\Core\ServiceLocator::hasService('Phile_ErrorHandler')) {
-        ob_end_clean();
 
         /** @var \Phile\ServiceLocator\ErrorHandlerInterface $errorHandler */
         $errorHandler = \Phile\Core\ServiceLocator::getService(
