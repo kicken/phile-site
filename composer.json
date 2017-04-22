@@ -35,7 +35,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/kicken/phile.git"
+      "url": "https://github.com/kicken/Phile.git"
     }
   ],
   "require": {
