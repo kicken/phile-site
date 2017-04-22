@@ -34,11 +34,8 @@
   ],
   "repositories": [
     {
-      "type":"path",
-      "url": "../Phile-core",
-      "options": {
-        "symlink": false
-      }
+      "type": "vcs",
+      "url": "https://github.com/kicken/phile.git"
     }
   ],
   "require": {
