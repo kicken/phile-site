@@ -4,11 +4,15 @@
   <!-- Made with PhileCMS -->
   <meta charset="{{ config.charset }}"/>
   <title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
+
   {% if meta.description %}
   <meta name="description" content="{{ meta.description }}">
-  {% endif %}{% if meta.robots %}
+  {% endif %}
+
+  {% if meta.robots %}
   <meta name="robots" content="{{ meta.robots }}">
   {% endif %}
+
   <meta property="og:type" content="article"/>
   <meta property="og:title" content="{{ current_page.title }} | {{ site_title }}"/>
   <meta property="og:description" content="{{ meta.description }}"/>
