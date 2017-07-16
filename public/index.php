@@ -8,17 +8,6 @@
 
 require_once '../vendor/autoload.php';
 
-try {
-    $config = include '../config.php';
-    $core = \Phile\Core::bootstrap($config);
-    $core->handleRequest();
-} catch (\Exception $e) {
-    if (\Phile\Core\ServiceLocator::hasService('Phile_ErrorHandler')) {
-
-        /** @var \Phile\ServiceLocator\ErrorHandlerInterface $errorHandler */
-        $errorHandler = \Phile\Core\ServiceLocator::getService(
-            'Phile_ErrorHandler'
-        );
-        $errorHandler->handleException($e);
-    }
-}
+$config = include '../config.php';
+$core = \Phile\Core::bootstrap($config);
+$core->handleRequest();
