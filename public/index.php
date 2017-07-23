@@ -10,4 +10,4 @@ require_once '../vendor/autoload.php';
 
 $config = include '../config.php';
 $core = \Phile\Core::bootstrap($config);
-$core->handleRequest();
+$core->handleRequest($_SERVER['REQUEST_URI']);
