@@ -63,7 +63,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kicken/phile-core.git",
-                "reference": "dba89205ca0f9700b36d569f85e9304fa233b2e6"
+                "reference": "ddcc72432fd0404f3f65bf54f67f54f9319bfd33"
             },
             "require": {
                 "michelf/php-markdown": ">=1.4",
@@ -119,7 +119,7 @@
                 "plugins",
                 "twig"
             ],
-            "time": "2017-04-22 05:57:53"
+            "time": "2017-07-23 03:04:38"
         },
         {
             "name": "phile-cms/plugin-installer-plugin",
