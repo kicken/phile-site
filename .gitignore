@@ -1,9 +1,9 @@
 # Composer
-composer.phar
-vendor/*
+/composer.phar
+/vendor
 
 # Site configuration
-config.php
+/config.php
 
 # OS Generated
 .DS_Store*
@@ -13,12 +13,12 @@ Thumbs.db
 *.swp
 
 # User themes
-themes/*
-!themes/index.html
-!themes/default/*
+/public/themes/*
+!/public/themes/index.html
+!/public/themes/default
 
 # PHPStorm settings
-.idea
+/.idea
 
 # Volatile data
-var/*
+/var
