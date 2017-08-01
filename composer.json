@@ -1,5 +1,5 @@
 {
-  "name": "phile-cms/phile",
+  "name": "phile-cms/phile-site",
   "type": "project",
   "description": "A file-based CMS with a swappable parser, template engine, cache and storage services, error handler, and meta parser.",
   "keywords": [
@@ -40,8 +40,7 @@
   ],
   "require": {
     "php": ">=5.5.0",
-    "phile-cms/plugin-installer-plugin": "^1.0",
-    "phile-cms/phile-core": "dev-master"
+    "phile-cms/phile-core": "^2.0"
   },
   "scripts": {
     "phile-setup": "Phile\\Composer\\SetupScript::run",
