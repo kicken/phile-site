@@ -1,0 +1,17 @@
+services:
+  php:
+    build:
+      dockerfile: "Dockerfile"
+      context: "php"
+    volumes:
+      - "../:/var/www"
+      - "../../phile-core:/var/phile-core"
+  httpd:
+    build:
+      dockerfile: "Dockerfile"
+      context: "httpd"
+    volumes:
+      - "../:/var/www"
+      - "../../phile-core:/var/phile-core"
+    ports:
+      - "8080:80"
