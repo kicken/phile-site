@@ -1,34 +1,13 @@
 {
-  "name": "phile-cms/phile-site",
+  "name": "kicken/phile-site",
+  "description": "A template website for PhileCMS",
   "type": "project",
-  "description": "A file-based CMS with a swappable parser, template engine, cache and storage services, error handler, and meta parser.",
-  "keywords": [
-    "cms",
-    "markdown",
-    "flat",
-    "file",
-    "twig",
-    "plugins"
-  ],
-  "homepage": "http://philecms.com",
   "license": "MIT",
   "authors": [
     {
-      "name": "Frank Nägler",
-      "email": "mail@naegler.net",
-      "homepage": "https://naegler.hamburg",
-      "role": "Developer"
-    },
-    {
-      "name": "James Doyle",
-      "email": "james2doyle@gmail.com",
-      "homepage": "http://ohdoylerules.com/",
-      "role": "Developer"
-    },
-    {
-      "name": "Schlaefer",
-      "email": "openmail+sourcecode@siezi.com",
-      "homepage": "http://siezi.com/",
+      "name": "Keith",
+      "email": "keithm@aoeex.com",
+      "homepage": "https://aoeex.com",
       "role": "Developer"
     }
   ],
@@ -39,8 +18,8 @@
     }
   ],
   "require": {
-    "php": ">=5.5.0",
-    "phile-cms/phile-core": "^2.0"
+    "php": "^8.0",
+    "phile-cms/phile-core": "dev-master as 2.0"
   },
   "scripts": {
     "phile-setup": "Phile\\Composer\\SetupScript::run",
