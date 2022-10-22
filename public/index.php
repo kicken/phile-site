@@ -7,6 +7,9 @@
  */
 
 require_once '../vendor/autoload.php';
+if (!file_exists('../var/cache')){
+    mkdir('../var/cache', 0777, true);
+}
 
 $config = include '../config.php';
 $core = \Phile\Core::bootstrap($config);
