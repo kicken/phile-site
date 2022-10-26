@@ -6,6 +6,8 @@ services:
     volumes:
       - "../:/var/www"
       - "../../phile-core:/var/phile-core"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
   httpd:
     build:
       dockerfile: "Dockerfile"
