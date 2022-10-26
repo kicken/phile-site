@@ -15,15 +15,29 @@
     {
       "type": "git",
       "url": "https://github.com/kicken/phile-core.git"
+    },
+    {
+      "type": "github",
+      "url": "https://github.com/kicken/phileServeContentFiles"
     }
   ],
   "require": {
     "php": "^8.0",
-    "phile-cms/phile-core": "dev-master as 2.0"
+    "phile-cms/phile-core": "dev-master as 2.0",
+    "kicken/phile-serve-content-files": "dev-php8",
+    "composer-runtime-api": "^2.0"
   },
   "scripts": {
     "phile-setup": "Phile\\Composer\\SetupScript::run",
-    "post-create-project-cmd": "@phile-setup",
-    "post-install-cmd": "@phile-setup"
+    "phile-plugins": "Phile\\Composer\\PluginLocator::locatePlugins",
+    "post-create-project-cmd": [
+      "@phile-setup",
+      "@phile-plugins"
+    ],
+    "post-install-cmd": [
+      "@phile-setup",
+      "@phile-plugins"
+    ],
+    "post-update-cmd": "@phile-plugins"
   }
 }

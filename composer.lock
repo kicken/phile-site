@@ -4,8 +4,48 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "69772760e10118efb2f94b595e779966",
+    "content-hash": "8daadba98aef7d96a748e6d652a0962c",
     "packages": [
+        {
+            "name": "kicken/phile-serve-content-files",
+            "version": "dev-php8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kicken/phileServeContentFiles.git",
+                "reference": "67337f8397dfea5c8df86c03589d9c62688a49d0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kicken/phileServeContentFiles/zipball/67337f8397dfea5c8df86c03589d9c62688a49d0",
+                "reference": "67337f8397dfea5c8df86c03589d9c62688a49d0",
+                "shasum": ""
+            },
+            "require": {
+                "phile-cms/phile-core": "^2.0"
+            },
+            "type": "phile-plugin",
+            "extra": {
+                "entry": "Kicken\\Phile\\Plugin\\ServeContentFiles\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Kicken\\Phile\\Plugin\\ServeContentFiles\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Plugin for PhileCMS to serve files from the content/ directory",
+            "homepage": "https://github.com/kicken/phileServeContentFiles",
+            "keywords": [
+                "content",
+                "phile"
+            ],
+            "support": {
+                "source": "https://github.com/kicken/phileServeContentFiles/tree/php8"
+            },
+            "time": "2022-10-26T05:15:18+00:00"
+        },
         {
             "name": "michelf/php-markdown",
             "version": "2.0.0",
@@ -68,11 +108,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kicken/phile-core.git",
-                "reference": "09049ad31621a49f26f8a8dea89e8002dde43c01"
+                "reference": "dbb5e92fa77a259b659a9a0d5fa4a8aa65864d1a"
             },
             "require": {
+                "ext-fileinfo": "*",
                 "michelf/php-markdown": ">=1.4",
-                "php": ">=7.0",
+                "php": ">=7.1",
                 "phpfastcache/phpfastcache": "~9.0",
                 "symfony/event-dispatcher": "^2.1",
                 "symfony/yaml": "^2.7",
@@ -125,7 +166,7 @@
                 "plugins",
                 "twig"
             ],
-            "time": "2022-10-22T07:53:41+00:00"
+            "time": "2022-10-22T08:32:01+00:00"
         },
         {
             "name": "phpfastcache/phpfastcache",
@@ -642,12 +683,14 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "phile-cms/phile-core": 20
+        "phile-cms/phile-core": 20,
+        "kicken/phile-serve-content-files": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.0"
+        "php": "^8.0",
+        "composer-runtime-api": "^2.0"
     },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"
